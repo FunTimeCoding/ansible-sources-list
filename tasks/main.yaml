@@ -1,1 +1,6 @@
 ---
+- file:
+    path: /etc/apt/sources.list~
+    state: absent
+  remote_user: root
+  when: ansible_os_family == 'Debian'
